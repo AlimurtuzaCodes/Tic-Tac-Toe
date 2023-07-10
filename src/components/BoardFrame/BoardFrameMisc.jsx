@@ -1,6 +1,6 @@
 import React from "react";
 
-const BoardDecoration = ({ style, rotate }) => {
+const BoardFrameMisc = ({ style, rotate }) => {
   return (
     <div
       className={`flex flex-col justify-center items-center gap-2 absolute ${style} ${rotate}`}
@@ -32,4 +32,4 @@ const BoardDecoration = ({ style, rotate }) => {
   );
 };
 
-export default BoardDecoration;
+export default BoardFrameMisc;

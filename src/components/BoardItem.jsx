@@ -1,15 +1,7 @@
 import React from "react";
 import { playerO, playerX } from "../assets";
 
-const BoardItem = ({
-  style,
-  currentPlayer,
-  index,
-  handleOnClick,
-  board,
-  winner,
-  winningCells,
-}) => {
+const BoardItem = ({ style, index, handleOnClick, board }) => {
   return (
     <div
       className={`bg-primary rounded-lg board_back_grad ${style} flex justify-center items-center cursor-pointer relative`}

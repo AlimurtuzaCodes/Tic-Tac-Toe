@@ -8,6 +8,8 @@ export default {
         secondary: "#4F5D64",
         tertiary: "#EED2A1",
         golden: "#EED3A3",
+        xColor: "#C6D4D9",
+        oColor: "#E9B98B",
         gray: {
           600: "#828C90",
         },

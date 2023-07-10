@@ -1,6 +1,7 @@
 <h1 align="center">Tic Tac Toe ☀️</h1>
 
-![image](https://github.com/AlimurtuzaCodes/Tic-Tac-Toe/assets/88965204/e71ca3f8-2e6f-46a7-b563-fd4981f96fee)
+![image](https://github.com/AlimurtuzaCodes/Tic-Tac-Toe/assets/88965204/2e66839a-566c-4993-a578-6fc886508b2d)
+
 
 
 ## 🚀 How to Run the Game

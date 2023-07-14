@@ -3,7 +3,6 @@ import ResultFrameMisc from "./ResultFrameMisc";
 
 const ResultModal = ({ resetGame, winner }) => {
   const player = playerStyle.find((item) => item.player === winner);
-  console.log(player.title);
   const resultStyle = {
     frame: {
       background:

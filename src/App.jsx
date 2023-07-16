@@ -2,7 +2,7 @@ import GameLayout from "./components/GameLayout";
 
 function App() {
   return (
-    <main className="bg-slate-500 h-screen flex flex-row justify-center items-center">
+    <main className="w-full bg-slate-500 h-screen flex flex-col lg:flex-row justify-center items-center">
       <GameLayout />
     </main>
   );

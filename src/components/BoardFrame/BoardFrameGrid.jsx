@@ -1,11 +1,9 @@
 import { styles } from "../../styles";
 import BoardFrameMisc from "./BoardFrameMisc";
 
-const Heading = ({ title, style }) => {
+const Heading = ({ title }) => {
   return (
-    <h1
-      className={`font-black text-base text-golden tracking-[10px] ${style}`}
-    >
+    <h1 className="font-black text-[10px] md:text-base text-golden tracking-[10px] w-full text-center mt-4">
       {title}
     </h1>
   );
@@ -16,16 +14,16 @@ const BoardFrameGrid = () => {
     <>
       <div className={`cell_a ${styles.frameItem} rounded-tl-[32px] relative`}>
         <BoardFrameMisc style="left-5 top-10" />
-        <Heading title="TIC" style="absolute top-6 right-16" />
+        <Heading title="TIC" />
       </div>
 
       <div className={`cell_b ${styles.frameItem} flex justify-center`}>
-        <Heading title="TAC" style="mt-6" />
+        <Heading title="TAC" />
       </div>
 
       <div className={`cell_c ${styles.frameItem} rounded-tr-[32px] relative`}>
         <BoardFrameMisc style="right-5 top-10" />
-        <Heading title="TOE" style="absolute top-6 left-16" />
+        <Heading title="TOE" />
       </div>
 
       <div className={`cell_d ${styles.frameItem}`}></div>

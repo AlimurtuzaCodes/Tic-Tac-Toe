@@ -1,15 +1,15 @@
 import { playerO, playerX } from "../assets";
 
 const board_config = [
-  { id: "a", extrastyle: "rounded-tl-[32px]" },
+  { id: "a", extrastyle: "rounded-tl-lg lg:rounded-tl-[18px]" },
   { id: "b" },
-  { id: "c", extrastyle: "rounded-tr-[32px]" },
+  { id: "c", extrastyle: "rounded-tr-lg lg:rounded-tr-[18px]" },
   { id: "d" },
   { id: "e" },
   { id: "f" },
-  { id: "g", extrastyle: "rounded-bl-[32px]" },
+  { id: "g", extrastyle: "rounded-bl-lg lg:rounded-bl-[18px]" },
   { id: "h" },
-  { id: "i", extrastyle: "rounded-br-[32px]" },
+  { id: "i", extrastyle: "rounded-br-lg lg:rounded-br-[18px]" },
 ];
 
 const playerStyle = [

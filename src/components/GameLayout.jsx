@@ -56,12 +56,12 @@ const GameLayout = () => {
 
       <PlayerSelection player={currentPlayer} resetGame={resetGame} />
 
-      <div className="w-[45%] h-[90%] grid_layout relative">
+      <div className="w-[95%] h-[45%] md:w-[80%] md:h-[60%] lg:w-[45%] lg:h-[90%]  grid_layout relative">
         {/* Board Frame Background */}
         <BoardFrameGrid />
 
         {/* Game Board */}
-        <div className="absolute w-[82%] h-[82%] z-10 m-auto top-0 bottom-0 left-0 right-0 board_layout">
+        <div className="absolute w-[75%] h-[75%] lg:w-[80%] lg:h-[85%] z-10 m-auto top-0 bottom-0 left-0 right-0 board_layout rounded-xl lg:rounded-3xl border-4 border-[#d1c4b3]">
           {board_config.map((cell, index) => (
             <BoardItem
               key={`${cell.id}index`}

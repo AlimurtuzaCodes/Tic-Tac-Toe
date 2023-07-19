@@ -16,8 +16,7 @@ const BoardItem = ({ style, index, handleOnClick, board }) => {
         />
       )}
 
-      <div className="w-[60%] h-[60%] border-[8px] md:border-[16px]  border-[#D9D8D1] rounded-full relative -z-1 flex justify-center items-center">
-        {/* <div className="absolute -bottom-1 left-1" /> */}
+      <div className="inner_board_item_circle -z-1">
         <div className="flex flex-col h-[195%] justify-between items-center">
           <div
             className="w-[1px] lg:w-[2px] h-4 lg:h-6 rounded-[1px]"

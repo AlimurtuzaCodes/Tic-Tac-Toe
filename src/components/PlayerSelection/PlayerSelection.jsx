@@ -2,18 +2,15 @@ import Player from "./Player";
 
 const PlayerSelection = ({ player, resetGame }) => {
   return (
-    <div className="flex flex-col justify-between items-center rotate-90 lg:rotate-0 -mb-[6%] w-[70%] h-[35%] md:h-[45%] md:w-[45%] md:-mb-[10%]">
+    <div className="player_selection_container">
       <Player player={player} color="bg-xColor" title="X" />
 
-      <div className="flex flex-row justify-center items-center w-full">
-        <h1 className="font-bold text-2xl text-gray-600 text-center -rotate-90 flex-1">
+      <div className="flex flex-col h-full pt-6 md:pt-0 md:flex-row md:w-full justify-start items-center">
+        <h1 className="font-bold text-2xl text-gray-600 text-center flex-1">
           VS
         </h1>
-        <div className="flex-1 grid place-items-center -rotate-90 md:pb-6">
-          <button
-            className="bg-secondary rounded-lg px-4 py-2 text-tertiary font-bold text-[10px] md:text-xl tracking-widest"
-            onClick={resetGame}
-          >
+        <div className="flex-1 grid place-items-center md:mr-6">
+          <button className="reset_btn" onClick={resetGame}>
             RESTART
           </button>
         </div>

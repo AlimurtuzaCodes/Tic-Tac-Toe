@@ -50,24 +50,19 @@ const GameLayout = () => {
 
   return (
     <>
-      {/* Result Modal */}
-
       {winner && <ResultModal resetGame={resetGame} winner={winner} />}
 
       <PlayerSelection player={currentPlayer} resetGame={resetGame} />
 
-      <div className="w-[95%] h-[45%] md:w-[80%] md:h-[60%] lg:w-[45%] lg:h-[90%]  grid_layout relative">
-        {/* Board Frame Background */}
+      <div className="board_container">
         <BoardFrameGrid />
 
-        {/* Game Board */}
-        <div className="absolute w-[75%] h-[75%] lg:w-[80%] lg:h-[85%] z-10 m-auto top-0 bottom-0 left-0 right-0 board_layout rounded-xl lg:rounded-3xl border-4 border-[#d1c4b3]">
+        <div className="inner_board_container">
           {board_config.map((cell, index) => (
             <BoardItem
               key={`${cell.id}index`}
               index={index}
               style={`${cell.id} ${cell.extrastyle}`}
-              currentPlayer={currentPlayer}
               handleOnClick={handleOnClick}
               board={board}
             />

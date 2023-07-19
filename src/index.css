@@ -13,7 +13,6 @@
   color-scheme: dark;
 }
 
-
 .grid_layout {
   display: grid;
   grid-template-columns: 1fr 0.8fr 1.4fr 0.8fr 1fr;
@@ -120,4 +119,33 @@
 }
 .cell_i {
   grid-area: i;
+}
+
+/* Custom Tailwind CSS */
+.board_container {
+  @apply min-w-[20rem] h-[20rem] md:w-[26rem] md:h-[26rem] lg:w-[32rem] lg:h-[32rem] xl:w-[42rem] xl:h-[42rem] grid_layout relative;
+}
+
+.inner_board_container {
+  @apply absolute w-[75%] h-[75%] z-10 m-auto inset-0 board_layout rounded-xl lg:rounded-3xl border-4 xl:border-[10px] border-[#d1c4b3];
+}
+
+.player_selection_container {
+  @apply flex w-[16rem] md:w-[18rem] lg:w-[20rem] xl:w-[24rem] flex-row md:flex-col justify-between items-center gap-2 md:gap-6 xl:gap-10;
+}
+
+.reset_btn {
+  @apply bg-secondary rounded-lg px-4 py-2 text-tertiary font-bold text-[8px] md:text-sm tracking-widest;
+}
+
+.player {
+  @apply flex-1 md:w-full rounded-t-[20px] md:rounded-tr-[0px] md:rounded-s-[30px] flex flex-col md:flex-row justify-between items-center py-4 md:pl-6 md:pr-8 lg:pr-10 xl:px-10 gap-8;
+}
+
+.inner_board_item_circle {
+  @apply w-[60%] h-[60%] border-[8px] md:border-[10px] xl:border-[16px]  border-[#D9D8D1] rounded-full relative  flex justify-center items-center;
+}
+
+.result_container {
+  @apply w-[90%] h-[90%] rounded-[30px] md:rounded-[48px] border-2 border-dashed border-gray-600 relative flex flex-col justify-center items-center gap-10;
 }

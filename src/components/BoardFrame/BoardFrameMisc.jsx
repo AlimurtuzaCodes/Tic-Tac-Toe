@@ -6,14 +6,14 @@ const BoardFrameMisc = ({ style, rotate }) => {
       className={`flex flex-col justify-center items-center gap-2 absolute ${style} ${rotate}`}
     >
       <div
-        className={`w-5 h-5 md:w-10 md:h-10 circle_gradient rounded-full  ${rotate}`}
+        className={`w-3 h-3 md:w-6 md:h-6 lg:w-9 lg:h-9 circle_gradient rounded-full  ${rotate}`}
       ></div>
       <div className="grid place-items-center">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 12 136"
           fill="none"
-          className="w-3 h-12 md:h-20"
+          className="w-3 h-8 md:h-12 lg:h-20"
         >
           <path
             d="M6 135L6 133"

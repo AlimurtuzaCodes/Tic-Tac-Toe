@@ -12,35 +12,31 @@ const ResultModal = ({ resetGame, winner }) => {
     },
   };
   return (
-    <div className="w-full h-[50%] flex flex-col justify-center items-center gap-4 absolute z-20">
+    <div className="w-full h-[35%] md:h-[50%] lg:h-[25rem] flex flex-col justify-center items-center gap-4 absolute z-20">
       <ResultFrameMisc direction="flex-col" />
 
       <div
         style={resultStyle.frame}
         className="w-full h-full  grid place-items-center relative"
       >
-        <div className="w-[90%] h-[90%] rounded-[48px] border-2 border-dashed border-gray-600 relative flex flex-col justify-center items-center gap-10">
+        <div className="result_container">
           {player.title !== "DRAW" && (
             <img
               src={player.icon}
               alt="player"
-              className="w-60 h-60  absolute -top-40 z-10"
+              className="w-28 h-28 md:w-40 md:h-40 absolute -top-20 md:-top-28 z-10"
             />
           )}
 
-          <div className="w-8 h-8 circle_gradient rounded-full absolute top-6 left-6" />
-          <div className="w-8 h-8 circle_gradient rounded-full absolute top-6 right-6" />
-          <div className="w-8 h-8 circle_gradient rounded-full absolute bottom-6 left-6" />
-          <div className="w-8 h-8 circle_gradient rounded-full absolute bottom-6 right-6" />
-          {/* Main Content */}
+          <div className="w-4 h-4 md:w-8 md:h-8 circle_gradient rounded-full absolute top-4 left-4 md:top-6 md:left-6" />
+          <div className="w-4 h-4 md:w-8 md:h-8 circle_gradient rounded-full absolute  top-4 right-4 md:top-6 md:right-6" />
+          <div className="w-4 h-4 md:w-8 md:h-8 circle_gradient rounded-full absolute  bottom-4 left-4 md:bottom-6 md:left-6" />
+          <div className="w-4 h-4 md:w-8 md:h-8 circle_gradient rounded-full absolute  bottom-4 right-4 md:bottom-6 md:right-6" />
 
-          <h1 className="font-extrabold text-7xl tracking-widest text-secondary">
+          <h1 className="font-extrabold text-3xl md:text-5xl lg:text-7xl tracking-widest text-secondary">
             {player.title}
           </h1>
-          <button
-            onClick={resetGame}
-            className="bg-secondary rounded-lg px-6 py-1 text-tertiary font-bold text-xl tracking-widest"
-          >
+          <button onClick={resetGame} className="reset_btn">
             RESTART
           </button>
         </div>

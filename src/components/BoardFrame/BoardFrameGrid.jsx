@@ -3,7 +3,7 @@ import BoardFrameMisc from "./BoardFrameMisc";
 
 const Heading = ({ title }) => {
   return (
-    <h1 className="font-black text-[10px] md:text-base text-golden tracking-[10px] w-full text-center mt-4">
+    <h1 className="font-black text-xs md:text-sm lg:text-base text-golden tracking-[10px] w-full text-center mt-4">
       {title}
     </h1>
   );
